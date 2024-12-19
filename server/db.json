@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123456",
+      "role": "admin",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    }
+  ],
+  "lost_cards": [
+    {
+      "id": "1",
+      "cardId": "2024001",
+      "name": "张三",
+      "phone": "13800138000",
+      "reason": "在图书馆学习时遗失",
+      "status": "cancelled",
+      "time": "2024-12-18 14:30"
+    },
+    {
+      "id": "2",
+      "cardId": "2024002",
+      "name": "李四",
+      "phone": "13800138001",
+      "reason": "在食堂就餐时遗失",
+      "status": "completed",
+      "time": "2024-12-18 13:15"
+    }
+  ],
+  "found_cards": [
+  ],
+  "notices": [
+    {
+      "id": "1",
+      "title": "关于校园卡系统升级的通知",
+      "content": "为提升服务质量，系统将于本周六凌晨2:00-4:00进行升级维护",
+      "time": "2024-03-20 10:00",
+      "author": "系统管理员",
+      "isActive": false
+    },
+    {
+      "id": "2",
+      "title": "寒假期间校园卡使用提醒",
+      "content": "请同学们在寒假期间妥善保管好自己的校园卡，避免遗失",
+      "time": "2024-03-19 15:30",
+      "author": "学生处",
+      "isActive": false
+    },
+    {
+      "id": "9b89",
+      "title": "laiba",
+      "content": "2",
+      "time": "2024/12/19 13:28:30",
+      "isActive": true
+    }
+  ],
+  "stats": {
+    "waitingLost": 8,
+    "todayProcessed": 12,
+    "totalNotices": 3,
+    "totalUsers": 1200
+  },
+  "activities": [
+    {
+      "id": "1",
+      "type": "found",
+      "title": "张三的校园卡已找到",
+      "content": "失主已成功认领并取回校园卡",
+      "time": "10分钟前"
+    },
+    {
+      "id": "2",
+      "type": "lost",
+      "title": "新卡片挂失申请",
+      "content": "李四提交了校园卡挂失申请",
+      "time": "30分钟前"
+    }
+  ],
+  "notifications": [
+  ]
+}

@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #165DFF;
+  --success-color: #00B42A;
+  --warning-color: #FF7D00;
+  --danger-color: #F53F3F;
+  --link-color: #165DFF;
+  --border-radius: 4px;
+}
+
+/* 卡片样式优化 */
+.arco-card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.arco-card-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 表单样式优化 */
+.arco-input-wrapper,
+.arco-select-view,
+.arco-textarea-wrapper {
+  border-radius: var(--border-radius);
+}
+
+.arco-input-wrapper:focus-within,
+.arco-select-view:focus-within,
+.arco-textarea-wrapper:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(var(--primary-6), 0.2);
+}
+
+/* 按钮样式优化 */
+.arco-btn {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+
+.arco-btn-primary {
+  background: var(--primary-color);
+}
+
+.arco-btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+
+/* 标签样式优化 */
+.arco-tag {
+  border-radius: 2px;
+}
+
+/* 表格样式优化 */
+.arco-table-container {
+  border-radius: var(--border-radius);
+  border: 1px solid #f0f0f0;
+}
+
+.arco-table-th {
+  background: #fafafa;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .arco-card {
+    border-left: none;
+    border-right: none;
+  }
+
+  .arco-form-item {
+    margin-bottom: 16px;
+  }
+
+  .arco-input-wrapper,
+  .arco-select-view,
+  .arco-textarea-wrapper,
+  .arco-btn {
+    height: 40px;
+  }
+
+  .arco-input,
+  .arco-select-view-value,
+  .arco-textarea {
+    font-size: 15px;
+  }
+}
+
+/* 动画效果 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+} 
